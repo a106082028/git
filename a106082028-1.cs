@@ -12,22 +12,22 @@ namespace ConsoleApplication1
         {
             Console.Clear();
 
-            //顏色
-            Console.ForegroundColor = ConsoleColor.Red;
+            // 顏色
+            Console.ForegroundColor = ConsoleColor.Green;
 
-            //輸入
+            // 輸入
             Console.Write("請輸入身高(公分):");
             string height = Console.ReadLine();
             Console.Write("請輸入體重(公斤):");
             string weight = Console.ReadLine();
 
-            //變數                  
+            // 變數                  
             double BMI = double.Parse(weight) / ((double.Parse(height) / 100) * (double.Parse(height) / 100));
 
-            //計算
+            // 計算
             Console.Write("BMI=" + BMI);
 
-            //結果
+            // 結果
             if (BMI >= 27)
             {
                 Console.Write("過重");
@@ -42,7 +42,7 @@ namespace ConsoleApplication1
             {
                 Console.WriteLine("標準");
             }
-            //結束
+            // 結束
             Console.ReadLine();
         }
     }
